@@ -1,0 +1,14 @@
+# Dependencias de Node.js
+node_modules/
+package-lock.json
+
+# Configuración de VS Code
+.vscode/
+
+# Archivos generados por Electron
+dist/
+out/
+
+# Archivos del sistema
+.DS_Store  # MacOS
+Thumbs.db  # Windows

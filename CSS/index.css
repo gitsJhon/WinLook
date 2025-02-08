@@ -1,0 +1,72 @@
+body {
+    background: #0B4F6C;
+    position: relative;
+    font-family: "Dosis", serif;
+    color: whitesmoke;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.menu-lateral {
+    width: 150px;
+    height: 100vh;
+    background: #040F16;
+    padding: 10px;
+    position: fixed;
+}
+
+.logo {
+    font-size: 24px;
+    font-family: "Dosis", serif;
+    font-weight: 100;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px 0;
+    border-radius: 10px; /* Más redondeado */
+    transition: 0.3s;
+    font-family: "Dosis", serif;
+}
+
+.menu a i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.menu a.active {
+    background: #0B4F6C;
+    color: #fff;
+    border-radius: 10px 0 0 10px; /* Más redondeado solo en la izquierda */
+    margin-right: -10px; /* Extiende el fondo hacia la derecha */
+    padding-right: 20px; /* Compensa el margen negativo */
+    box-shadow: none; /* Elimina el sombreado */
+}
+
+.contenido {
+    margin-left: 170px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.contenido h1 {
+    font-family: "Dosis", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Estilos para cursores */
