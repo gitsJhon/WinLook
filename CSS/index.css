@@ -70,3 +70,79 @@ body {
 }
 
 /* Estilos para cursores */
+/* Estilos generales para la tarjeta */
+.card {
+    background: linear-gradient(135deg, #2c3e50, #34495e); /* Color oscuro predominante */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+    width: 200px; /* Ancho reducido */
+    height: auto; /* Altura automática para adaptarse al contenido */
+    margin: 10px; /* Margen exterior para separar tarjetas */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear elementos a la izquierda */
+    text-align: left; /* Texto alineado a la izquierda */
+    color: #ecf0f1; /* Color de texto claro */
+}
+/* Efecto al pasar el mouse */
+.card:hover {
+    transform: translateY(-5px); /* Eleva ligeramente la tarjeta */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+}
+
+/* Estilos para el título */
+.card h2 {
+    margin: 0 0 10px 0; /* Margen inferior para separar del contenido */
+    white-space: nowrap; /* Evitar que el título se divida en varias líneas */
+    align-self: flex-start; /* Alinear el título a la izquierda */
+}
+
+/* Estilos para las imágenes */
+.cursor-preview {
+    display: flex;
+    flex-direction: row; /* Cambiar a disposición vertical */
+    align-items: flex-start; /* Alinear imágenes a la izquierda */
+    gap: 5px; /* Separación entre imágenes */
+    margin-bottom: 10px; /* Margen inferior para separar de los botones */
+    border-bottom-color: whitesmoke; /* Borde inferior*/
+}
+
+.cursor-preview img {
+    width: 50px; /* Tamaño de las imágenes reducido */
+    height: 50px;
+    transition: transform 0.2s ease; /* Efecto de hover */
+}
+
+.cursor-preview img:hover {
+    transform: scale(1.1); /* Efecto de hover */
+}
+
+/* Estilos para los botones */
+.buttons {
+    display: flex;
+    gap: 10px; /* Separación entre botones */
+    align-self: flex-end; /* Alinear botones a la derecha */
+}
+
+.buttons .btn {
+    background-color: transparent; /* Fondo transparente */
+    color: #3498db; /* Color del ícono */
+    border: none; /* Sin bordes */
+    padding: 0; /* Sin padding */
+    text-decoration: none; /* Quitar subrayado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px; /* Tamaño reducido */
+    height: 20px;
+    transition: color 0.2s ease; /* Efecto de hover */
+}
+
+.buttons .btn:hover {
+    color: #2980b9; /* Cambiar color al hacer hover */
+}
+
+.buttons .btn i {
+    font-size: 1em; /* Tamaño del ícono */
+}
