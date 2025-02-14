@@ -13,7 +13,7 @@ body {
 }
 
 .menu-lateral {
-    width: 150px;
+    width: 95px;
     height: 100vh;
     background: #040F16;
     padding: 10px;
@@ -78,7 +78,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
     width: 200px; /* Ancho reducido */
     height: auto; /* Altura automática para adaptarse al contenido */
-    margin: 10px; /* Margen exterior para separar tarjetas */
+    margin: 0px; /* Margen exterior para separar tarjetas */
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Alinear elementos a la izquierda */
@@ -145,4 +145,10 @@ body {
 
 .buttons .btn i {
     font-size: 1em; /* Tamaño del ícono */
+}
+.padre {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Columnas flexibles */
+    gap: 0px; /* Espacio entre cartas */
+    justify-content: center; /* Centra el contenido */
 }
