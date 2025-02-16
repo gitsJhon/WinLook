@@ -2,7 +2,7 @@ async function cargarCursores() {
     try {
         const response = await fetch("http://127.0.0.1:5000/cursores"); // Llamada a la API
         const datos = await response.json(); // Convierte la respuesta en JSON
-
+        console.log("Datos de la api", datos)
         const contenedor = document.querySelector(".padre"); // Div donde se insertan las cards
         if (!contenedor) return;
 
@@ -11,13 +11,20 @@ async function cargarCursores() {
         datos.forEach((cursor) => {
             const card = document.createElement("div");
             card.classList.add("card");
+            console.log(`Procesando cursor ${index + 1}:`, cursor); // Depuración de cada objeto recibido
 
+            // Verifica que las imágenes existen en la respuesta
+            const img1 = cursor["img 1"];
+            const img2 = cursor["img 2"];
+            const img3 = cursor["img 3"];
+
+            console.log(`Imágenes del cursor ${index + 1}:`, img1, img2, img3);
             card.innerHTML = `
                 <h2>${cursor.Nombres}</h2>
                 <div class="cursor-preview">
-                    <img src="${cursor['img 1']}" alt="Arrow Cursor">
-                    <img src="${cursor['img 2']}" alt="Hand Cursor">
-                    <img src="${cursor['img 3']}" alt="Help Cursor">
+                    <img src="${img1}" alt="Arrow Cursor">
+                    <img src="${img2}" alt="Hand Cursor">
+                    <img src="${img3}" alt="Help Cursor">
                 </div>
                 <div class="buttons">
                     <a href="#" download class="btn">

@@ -9,6 +9,11 @@ app = Flask(__name__)
 def obtener_cursores():
     return jsonify(cursor_datos())
 
+@app.route("/descarga")
+def descarga():
+    data = request.json
+    url = data.get("url")
+
 @app.route("/abrir-url", methods=["POST"])
 def abrir_url():
     data = request.json

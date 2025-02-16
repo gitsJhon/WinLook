@@ -72,7 +72,7 @@ body {
 /* Estilos para cursores */
 /* Estilos generales para la tarjeta */
 .card {
-    background: linear-gradient(135deg, #2c3e50, #34495e); /* Color oscuro predominante */
+    background: #040F16 ; /* Color oscuro predominante */
     border-radius: 10px; /* Bordes redondeados */
     padding: 15px; /* Espaciado interno */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
